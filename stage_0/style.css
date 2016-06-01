@@ -1,0 +1,231 @@
+/*
+ 1: #2C3E50
+ 2: #E74C3C
+ 3: #ECF0F1
+ 4: #3498DB
+ 5: #2980B9
+*/
+
+/* * {
+   outline: 1px solid red !important;
+} */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	/*background-color: #2980B9;*/
+	background: repeating-linear-gradient(
+	90deg,
+	#2980B9,
+	#2980B9 5px,
+	#3498DB 5px,
+	#3498DB 20px
+	);
+	margin: 0;
+}
+
+.header {
+	height: auto;
+	width: 800px;
+    color: #ECF0F1;
+	border-radius: 10px;
+    background-size: 1000px 1000px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("http://bgfons.com/upload/books_texture3025.jpg");
+	margin: 0;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 25px;
+	box-shadow: 10px 10px 5px gray;
+}
+
+.header h1 {
+	margin: 0;
+	position: relative;
+	z-index: 1;
+}
+
+.header p {
+	margin: 0;
+	margin-top: 10px;
+	position: relative;
+	z-index: 1;
+}
+
+.header-flavor-box {
+    height: 130px;
+    width: 800px;
+    background-color: #E74C3C;
+	color: #2980B9;
+	position: absolute;
+	z-index: 0;
+	border-radius: 3px;
+	opacity: 0.45;
+}
+
+.right-bar * {
+	margin: 0;
+}
+
+.right-bar {
+	margin-left: 270px;
+}
+
+.left-bar {
+	margin-top: 25px;
+	float: left;
+	height: 200px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 10px;
+	background-color: #ECF0F1;
+	border-radius: 5px;
+	position: fixed;
+	box-shadow: 1px 1px 5px gray;
+	padding: 5px;
+	padding-right: 20px;
+}
+
+.left-bar h2 {
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: underline;
+}
+
+.footer {
+	margin-left: 20px;
+}
+
+.lesson {
+	width: 500px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 35px;
+	background-color: #ECF0F1;
+	border-radius: 5px;
+	padding: 35px;
+}
+
+div.lesson:target {
+	animation: highlight 1s ease;
+	outline: 10px double white ;
+	transform: translateX(20px);
+	transform: rotate(7deg);
+}
+
+@keyframes highlight {
+  0% { outline-color: #E74C3C; }
+  100% { border-top-color: white; }
+}
+
+div.lesson {
+  border-top: 40px solid white;
+  transition: all 0.5s ease;
+}
+
+.lesson p::first-letter {
+	font-size: 135%;
+	color: #E74C3C;
+}
+
+.footer {
+	width: 500px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 35px;
+	background-color: #ECF0F1;
+	border-radius: 5px;
+	padding: 35px;
+}
+
+.lesson h2 {
+	text-decoration: underline;
+}
+
+.container {
+	display: flex;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: serif;
+}
+
+h2 {
+    font-weight: lighter;
+    font-family: serif;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+li {
+    font-family: sans-serif;
+	font-size: 14px;
+}
+
+a {
+	color: #E74C3C;
+}
+
+a:hover {
+	animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: .1; }
+}
+
+.box {
+  color: black;
+  background: linear-gradient(
+     #ECF0F1, #ECF0F1 50%, #3498DB 50%, #3498DB
+  );
+  background-size: 100% 202%;
+  transition: all 0.2s ease;
+  animation: down-bump 0.4s ease;
+}
+
+.box h2 {
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+}
+
+.box:hover {
+  background-position: 100% 100%;
+  animation: up-bump 0.4s ease;
+}
+
+.box:hover p {
+  color: #ECF0F1;
+}
+
+.box:hover h2 {
+  color: #ECF0F1;
+}
+
+@keyframes up-bump {
+  0% { padding-top: 2em; }
+  50% { padding-top: 1.5em; }
+  100% { padding-top: 2em; }
+}
+@keyframes down-bump {
+  0% { padding-top: 2em; }
+  50% { padding-top: 2.5em; }
+  100% { padding-top: 2em; }
+}
+
+.removeAnchorStyle {
+	text-decoration: none;
+	color: #ECF0F1;
+}
+
